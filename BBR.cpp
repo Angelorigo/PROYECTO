@@ -29,8 +29,9 @@ int main(){
 	cin >> x;
 
 	bool encontrado = BBR(A, 0, n-1, x);
+
 	if (encontrado){
 		cout << "El número " << x << " está en el arreglo\n ";}
 	else{
-		cout << "El número " << x << " NO está en el arreglo\n ";}
-	return 0;}
+		cout << "El número " << x << " NO está en el arreglo\n";}
+return 0;}
