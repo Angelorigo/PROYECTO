@@ -60,6 +60,6 @@ int main(){
 	cout << "Arreglo original: \n";
 	ImpArray(A, n);
 	MERGESORT(A, 0, n-1);
-	cout << "Arreglo ordenado: \n";
+	cout << "Arreglo ordenado con MERGESORT: \n";
 	ImpArray(A, n);
 	return 0;}
