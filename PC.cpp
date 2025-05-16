@@ -24,7 +24,7 @@ void cambio(int varo, int coins[], int n){
 			cout << coincount[i] << " de a $" << coins[i] << endl;}}	cout << "\n-Gracias, buen dia" << endl;}}
 
 int main(){
-	int coins[] = {10000, 1000, 50, 20, 10, 5, 2, 1};
+	int coins[] = {10000, 1000, 50, 20, 10, 5, 2 };
 	int n = sizeof(coins)/sizeof(coins[0]);
 	int varo;
 
