@@ -8,28 +8,29 @@
 using namespace std;
 
 void cambio(int varo, int coins[], int n){
-	int coincount[n] = {0};
+	int coincount[n] = {0};	// 1 OE
 
-	for (int i = 0; i<n; i++){
-		while (varo >= coins[i]){
-			varo = varo - coins[i];
-			coincount[i]++;}}
-	if (varo >  0){
-		cout << "\n\n+ Hijoles, no le acompleto el cambio UnU" << endl;
-		cout << "\n- Bueno, seguire buscando..." << endl;}
+	for (int i = 0; i<n; i++){	// 4 OE
+		while (varo >= coins[i]){	// 2 OE
+			varo = varo - coins[i];	// 3 OE
+			coincount[i]++;}}	// 3 OE
+	if (varo >  0){	// 1 OE
+		cout << "\n\n+ Hijoles, no le acompleto el cambio UnU" << endl;	// 2 OE
+		cout << "\n- Bueno, seguire buscando..." << endl;}	// 2 OE
 	else{
-		cout << "\n\n+ Mire, aqui tiene su cambio..." << endl; 
-	for (int i = 0; i<n; i++){
-		if (coincount[i] > 0){
-			cout << coincount[i] << " de a $" << coins[i] << endl;}}	cout << "\n-Gracias, buen dia" << endl;}}
+		cout << "\n\n+ Mire, aqui tiene su cambio..." << endl;	// 2 OE
+	for (int i = 0; i<n; i++){	// 4 OE
+		if (coincount[i] > 0){	// 2 OE
+			cout << coincount[i] << " de a $" << coins[i] << endl;}}	// 6 OE
+	cout << "\n-Gracias, buen dia" << endl;}}	// 2 OE
 
 int main(){
-	int coins[] = {10000, 1000, 50, 20, 10, 5, 2 };
-	int n = sizeof(coins)/sizeof(coins[0]);
+	int coins[] = {10000, 1000, 50, 20, 10, 5, 2 };	// 1 OE
+	int n = sizeof(coins)/sizeof(coins[0]);	// 3 OE
 	int varo;
 
-	cout << "+ Wenas, cuanto quiere que le cambiemos?? \n\n- $";
-	cin >> varo;
-	cout << "\n+ Mmm, $" << varo << "...";
-	cambio(varo, coins, n);
-	return 0;}
+	cout << "+ Wenas, cuanto quiere que le cambiemos?? \n\n- $";	// 1 OE
+	cin >> varo;	// 1 OE
+	cout << "\n+ Mmm, $" << varo << "...";	// 3 OE
+	cambio(varo, coins, n);	// 1 OE
+	return 0;}	// 1 OE
